@@ -1,5 +1,5 @@
-testThread:testThread.cc
-	g++ -o $@ $^ -std=c++17 -lpthread
+blockqueue_test:main.cc
+	g++ -o $@ $^ -std=c++11 -lpthread
 .PHONY:clean
 clean:
-	rm -f testThread
+	rm -f blockqueue_test
